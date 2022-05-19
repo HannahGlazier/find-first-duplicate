@@ -1,9 +1,9 @@
 
 # find first duplicate, if none exits, return -1
-require 'set'
+# require 'set'
 
 def find_first_duplicate(arr)
-  uniques = Set.new
+  uniques = []
 
   arr.each do |value|
     return value if uniques.include?(value)
